@@ -3,7 +3,7 @@ Slackbot for broadcast messaging custom content based on user
 
 This is a **work in progress** and employs lots of inefficient methods. Specifically, there's a loop through the object that should only happen once, if at all, but I do it per user. Doesn't really matter since the whole run took about 10 seconds per 100 users :)
 
-##Input
+## Input
 messageBot takes a JSON of email & message objects and broadcasts them as DMs.
 ```
 [
@@ -14,10 +14,10 @@ messageBot takes a JSON of email & message objects and broadcasts them as DMs.
 ]
 ```
 
-##Example
+## Example
 <img width="616" alt="messagebot" src="https://cloud.githubusercontent.com/assets/7699842/22322041/11827898-e34e-11e6-8097-0fe09624a508.png">
 
-##Required Files
+## Required Files
 ```botId.py``` needs to have a simple class like the following:
 ```
 class bot:
@@ -25,5 +25,5 @@ class bot:
 	token = "xoxb-85858585858585-33939932908d09g8094mt3dfskjewfa"
 ```
 
-##Run
+## Run
 Run ```python3 messageBot.py``` to loop through all of the messages and send instantly.
